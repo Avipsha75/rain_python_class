@@ -1,5 +1,5 @@
-batteries = [50, 30, 4, 45, 12, 18, 30] # battery basket
-
+ # battery basket
+batteries = [50, 30, 4, 45, 12, 18, 30]
 minimum_battery_power = 20 # battery use minimum 20% charge
 
 usuable_battery_power = 0 # battery 0 power 0

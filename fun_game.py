@@ -22,7 +22,8 @@ def setup_mission():
     available_crews = int(input("Enter available crews:"))
     print("Setup Completed......")
 
-    return available_food, available_crews
+    return available_crews, available_food
+
 def alien_attack_game():
     print("Welcome to Alien Attack Game")
     print("Starting mission.......")
@@ -32,7 +33,7 @@ def alien_attack_game():
 
     print("WELCOME TO THE MARS!!!!")
 
-    print("Your battery is dead please charge the battery")
+    print("Your battery is dead please change the battery")
 
     print("Mission completed")
 
