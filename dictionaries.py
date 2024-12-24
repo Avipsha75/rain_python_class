@@ -1,13 +1,14 @@
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
+info = {
+  "name": "Avipsha Shrestha",
+  "subjects": ["Python", "C", "Java"," C++"],
+  "topics": ("dict", "sets"),
+  "age": 18,
+  "is_student": True,
+  12.99 : 94.99
 }
-x = thisdict["model"]
-y = thisdict.keys()
-z = thisdict.values()
-a = thisdict.items()
-print(x)
-print(y)
-print(z)
-print(a)
+print(info["name"])
+print(info["subjects"])
+print(info["topics"])
+print(info["age"])
+print(info["is_student"])
+print(info[12.99])
