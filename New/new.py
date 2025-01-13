@@ -4,7 +4,7 @@ file_path = "sales_summary.csv"
 
 # Step 1: Create the CSV file with headers
 def create_csv():
-    headers = ["Product", "Region", "Sales", "Price", "Total"]  # Added 'Total' column
+    headers = ["Product", "Region", "Sales", "Price", "Total"]  
     with open(file_path, "w", newline="") as file:
         writer = csv.writer(file)
         writer.writerow(headers)
@@ -12,11 +12,12 @@ def create_csv():
 
 # Step 2: Add a sale record to the CSV file
 def add_sale(product, region, sales, price):
-    total = sales * price  # Calculate total revenue for the product
+    total = sales * price  
+    average_price = total / sales
     with open(file_path, "a", newline="") as file:
         writer = csv.writer(file)
         writer.writerow([product, region, sales, price, total])
-    print(f"Sale added successfully: {product}, {region}, {sales}, {price}, {total}")
+    print(f"Sale added successfully: {product}, {region}, {sales}, {price}, {total}, {average_price}")
 
 # Step 3: Calculate total sales from the CSV file
 def calculate_total_sales():
@@ -24,8 +25,18 @@ def calculate_total_sales():
     with open(file_path, "r") as file:
         reader = csv.DictReader(file)
         for row in reader:
-            total_sales += float(row["Total"])  # Sum up the 'Total' column
+            total_sales += float(row["Total"])  
     print(f"Total Sales: ${total_sales:.2f}")
+
+def calculate_total_sales():
+    total_sales = 0
+    with open(file_path, "r") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            total_sales += float(row["Total"])  
+    print(f"Total Sales: ${total_sales:.2f}")
+
+
 
 # Example Usage
 create_csv()  # Create the CSV file
