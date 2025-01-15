@@ -23,5 +23,10 @@ if responses.status_code == 201:
     #Parsew the JSON data
     data = responses.json()
 
+    #Display the first 3 posts
+    for post in data[:3]:
+        print(f"Name: {post['name']}")
+        print(f"Username: {post['username']}")
+        print(f"Email: {post['email']}\n")
 else:
     print(f"Failed to add data. Status Code: {responses.status_code}")
