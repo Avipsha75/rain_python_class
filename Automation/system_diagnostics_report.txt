@@ -1,0 +1,26 @@
+Current Working Directory: C:\Python_Workshop\Automation
+
+Disk Usage (Current Directory):
+Volume in drive C has no label.
+ Volume Serial Number is CAAA-4BCE
+
+ Directory of C:\Python_Workshop\Automation
+
+01/21/2025  04:27 PM    <DIR>          .
+01/21/2025  04:21 PM    <DIR>          ..
+01/20/2025  08:46 PM               598 automate.py
+01/21/2025  03:22 PM               832 back_up.py
+01/21/2025  04:29 PM    <DIR>          example_directory
+01/21/2025  04:21 PM             1,329 new_task.py
+01/21/2025  04:23 PM               901 ne_task1.py
+01/20/2025  04:47 PM             1,589 organize1.py
+01/20/2025  03:45 PM               887 os_module.py
+01/21/2025  11:06 AM               661 sub_process1.py
+01/21/2025  03:33 PM               581 tasklistssss.py
+               8 File(s)          7,378 bytes
+               3 Dir(s)  68,698,562,560 bytes free
+
+System Information:
+OS: 
+Processor: 
+Total Memory: 8.00 GB
