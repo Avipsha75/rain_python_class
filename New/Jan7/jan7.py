@@ -13,3 +13,4 @@ word_counts = Counter(words)
 print("Word Frequencies:")
 for word, count in word_counts.items():
     print(f"{word}: {count}")
+    print(len(text))
